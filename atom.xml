@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:4000</id>
     <title>Gridea</title>
-    <updated>2022-02-11T03:32:59.598Z</updated>
+    <updated>2022-02-24T01:19:18.339Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:4000"/>
     <link rel="self" href="http://localhost:4000/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>http://localhost:4000/images/avatar.png</logo>
     <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[项目记录]]></title>
+        <id>http://localhost:4000/post/xiang-mu-ji-lu/</id>
+        <link href="http://localhost:4000/post/xiang-mu-ji-lu/">
+        </link>
+        <updated>2022-02-12T07:18:22.000Z</updated>
+        <content type="html"><![CDATA[<p>前端获取管理员信息：</p>
+<pre><code class="language-html">&lt;a href=&quot;general/profile&quot; class=&quot;addtabsit&quot;&gt;&lt;img src=&quot;{$admin.avatar|cdnurl|htmlentities}&quot; class=&quot;img-circle&quot; /&gt;&lt;/a&gt;
+</code></pre>
+<p>后端获取管理员信息：</p>
+<pre><code class="language-php">$admin = Session::get('admin');
+</code></pre>
+<pre><code class="language-json">array(14) { [&quot;id&quot;]=&gt; int(2) [&quot;username&quot;]=&gt; string(6) &quot;jingxi&quot; [&quot;nickname&quot;]=&gt; string(6) &quot;静兮&quot; [&quot;password&quot;]=&gt; string(32) &quot;****&quot; [&quot;salt&quot;]=&gt; string(6) &quot;****&quot; [&quot;avatar&quot;]=&gt; string(22) &quot;/assets/img/avatar.png&quot; [&quot;email&quot;]=&gt; string(19) &quot;jingxi258@gmail.com&quot; [&quot;loginfailure&quot;]=&gt; int(0) [&quot;logintime&quot;]=&gt; int(1644650199) [&quot;loginip&quot;]=&gt; string(9) &quot;127.0.0.1&quot; [&quot;createtime&quot;]=&gt; int(1644542233) [&quot;updatetime&quot;]=&gt; int(1644650199) [&quot;token&quot;]=&gt; string(36) &quot;a24727b8-db70-474f-b192-94beef4d2fca&quot; [&quot;status&quot;]=&gt; string(6) &quot;normal&quot; }
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>http://localhost:4000/post/hello-gridea/</id>
